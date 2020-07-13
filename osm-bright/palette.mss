@@ -61,24 +61,30 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #f2f2f2;
-@water:             #46bcec;
-@grass:             #f2f2f2;
-@beach:             #f2f2f2;
-@park:              #f2f2f2;
-@cemetery:          #f2f2f2;
-@wooded:            #f2f2f2;
-@agriculture:       #f2f2f2;
-
-@building:          #E4E0E0;
-@hospital:          rgb(229,198,195);
-@school:            #FFF5CC;
-@sports:            #B8E6B8;
-
-@residential:       @land * 0.98;
-@commercial:        @land * 0.97;
-@industrial:        @land * 0.96;
-@parking:           #EEE;
+@sports:            #dee0d5;
+@agriculture:       #dee0d5;
+@wooded:            #dee0d5;
+@cemetery:          #dee0d5;
+@background: #efebe7;
+@land:#f4f2ed;
+@forest: #dee0d5;
+@grass: lighten(@forest, 5%);
+@park:lighten(@forest, 3%);
+@hospital:#F1E2EE;
+@school: lighten(#D9D5E3, 5%);
+@stadium: #D9CDC1;
+@beach: #ebe2cd;
+@runway: #BFBEBD;
+@aerodrome: #D6D6D6;
+@building: darken(#e8e4e4,8);
+@water: #C3D5DD;
+@residential:  @land * 0.98;
+@commercial: @land * 0.97;
+@industrial: @land * 0.96;
+@military: @land * 0.95;
+@parking: #EEE;
+@place_of_worship: #E3C5C9;
+@admin: #000000;
 
 /* ================================================================== */
 /* ROAD COLORS
@@ -93,19 +99,19 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     #E65C5C;
+@motorway_line:     #c8c8c1;
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 
-@trunk_line:        #E68A5C;
+@trunk_line:        #c8c8c1;
 @trunk_fill:        lighten(@trunk_line,10%);
 @trunk_case:        @trunk_line * 0.9;
 
-@primary_line:      #FFC859;
+@primary_line:      #c8c8c1;
 @primary_fill:      lighten(@primary_line,10%);
 @primary_case:      @primary_line * 0.9;
 
-@secondary_line:    #FFE873;
+@secondary_line:    #c8c8c1;
 @secondary_fill:    lighten(@secondary_line,10%);
 @secondary_case:    @secondary_line * 0.9;
 
